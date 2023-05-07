@@ -1,0 +1,22 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": "airbnb-base",
+    "overrides": [
+    ],
+    "parserOptions": { 
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "import/no-unresolved": [ // игнорирования регистра
+            2, 
+            { "caseSensitive": false }
+         ],
+        
+        "no-restricted-syntax": ["off", "ForOfStatement"]//что бы линтер не ругался на цикл for of  и for in.
+    }
+}
